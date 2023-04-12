@@ -47,7 +47,6 @@ function Modal({
     if (disabled) {
       return;
     }
-
     onSubmit();
   }, [disabled, onSubmit]);
 
@@ -98,6 +97,7 @@ function Modal({
                   )}
                   <Button disabled={disabled} label={actionLabel} onClick={handleSubmit} />
                 </div>
+                {footer}
               </div>
             </div>
           </div>
